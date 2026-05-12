@@ -1,0 +1,312 @@
+2026-03-13 15:58:11 [restartedMain] INFO  c.s.f.Facturacion2Application - Starting Facturacion2Application using Java 25 with PID 12652 (C:\Users\HP\Downloads\facturacion2\facturacion2\target\classes started by HP in C:\Users\HP\Downloads\facturacion2\facturacion2)
+2026-03-13 15:58:11 [restartedMain] INFO  c.s.f.Facturacion2Application - No active profile set, falling back to 1 default profile: "default"
+2026-03-13 15:58:11 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-13 15:58:11 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-13 15:58:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13 15:58:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 JPA repository interfaces.
+2026-03-13 15:58:14 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-13 15:58:14 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-13 15:58:14 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-13 15:58:14 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2754 ms
+2026-03-13 15:58:14 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-13 15:58:15 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b6c0b86
+2026-03-13 15:58:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-13 15:58:15 [restartedMain] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/sistema_facturacion2?useSSL=false&serverTimezone=America/Mexico_City&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true (MySQL 8.4)
+2026-03-13 15:58:15 [restartedMain] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-03-13 15:58:15 [restartedMain] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `sistema_facturacion2`.`flyway_schema_history` does not exist yet
+2026-03-13 15:58:15 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.040s)
+2026-03-13 15:58:15 [restartedMain] INFO  org.flywaydb.core.Flyway - All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
+2026-03-13 15:58:15 [restartedMain] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `sistema_facturacion2`.`flyway_schema_history` ...
+2026-03-13 15:58:15 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `sistema_facturacion2`: << Empty Schema >>
+2026-03-13 15:58:15 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Migrating schema `sistema_facturacion2` to version "1 - create initial tables"
+2026-03-13 15:58:16 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 1 migration to schema `sistema_facturacion2`, now at version v1 (execution time 00:00.371s)
+2026-03-13 15:58:16 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-13 15:58:16 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-13 15:58:17 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13 15:58:17 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-13 15:58:17 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sistema_facturacion2?useSSL=false&serverTimezone=America/Mexico_City&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.6
+	Default catalog/schema: sistema_facturacion2/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-13 15:58:19 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13 15:58:19 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13 15:58:19 [restartedMain] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/webmvc/autoconfigure/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Unsatisfied dependency expressed through method 'requestMappingHandlerMapping' parameter 0: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [org/springframework/boot/webmvc/autoconfigure/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception with message: Error creating bean with name 'jacksonJsonHttpMessageConvertersCustomizer' defined in class path resource [org/springframework/boot/http/converter/autoconfigure/JacksonHttpMessageConvertersConfiguration$JacksonJsonHttpMessageConverterConfiguration.class]: Unsatisfied dependency expressed through method 'jacksonJsonHttpMessageConvertersCustomizer' parameter 0: Error creating bean with name 'jacksonJsonMapper' defined in class path resource [org/springframework/boot/jackson/autoconfigure/JacksonAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jacksonJsonMapper' parameter 0: Error creating bean with name 'jsonMapperBuilder' defined in class path resource [org/springframework/boot/jackson/autoconfigure/JacksonAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jsonMapperBuilder' parameter 0: Error creating bean with name 'standardJsonMapperBuilderCustomizer' defined in class path resource [org/springframework/boot/jackson/autoconfigure/JacksonAutoConfiguration$JacksonJsonMapperBuilderCustomizerConfiguration.class]: Unsatisfied dependency expressed through method 'standardJsonMapperBuilderCustomizer' parameter 0: Error creating bean with name 'spring.jackson-org.springframework.boot.jackson.autoconfigure.JacksonProperties': Could not bind properties to 'JacksonProperties' : prefix=spring.jackson, ignoreInvalidFields=false, ignoreUnknownFields=true
+2026-03-13 15:58:19 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13 15:58:19 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-13 15:58:20 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-13 15:58:20 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-03-13 15:58:20 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-13 15:58:20 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.jackson.serialization' to java.util.Map<tools.jackson.databind.SerializationFeature, java.lang.Boolean>:
+
+    Reason: failed to convert java.lang.String to tools.jackson.databind.SerializationFeature (caused by java.lang.IllegalArgumentException: No enum constant tools.jackson.databind.SerializationFeature.write-dates-as-timestamps)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    CLOSE_CLOSEABLE
+    EAGER_SERIALIZER_FETCH
+    FAIL_ON_EMPTY_BEANS
+    FAIL_ON_ORDER_MAP_BY_INCOMPARABLE_KEY
+    FAIL_ON_SELF_REFERENCES
+    FAIL_ON_UNWRAPPED_TYPE_IDENTIFIERS
+    FLUSH_AFTER_WRITE_VALUE
+    INDENT_OUTPUT
+    ORDER_MAP_ENTRIES_BY_KEYS
+    USE_EQUALITY_FOR_OBJECT_ID
+    WRAP_EXCEPTIONS
+    WRAP_ROOT_VALUE
+    WRITE_CHAR_ARRAYS_AS_JSON_ARRAYS
+    WRITE_EMPTY_JSON_ARRAYS
+    WRITE_SELF_REFERENCES_AS_NULL
+    WRITE_SINGLE_ELEM_ARRAYS_UNWRAPPED
+
+2026-03-13 16:02:47 [restartedMain] INFO  c.s.f.Facturacion2Application - Starting Facturacion2Application using Java 25 with PID 13852 (C:\Users\HP\Downloads\facturacion2\facturacion2\target\classes started by HP in C:\Users\HP\Downloads\facturacion2\facturacion2)
+2026-03-13 16:02:47 [restartedMain] INFO  c.s.f.Facturacion2Application - No active profile set, falling back to 1 default profile: "default"
+2026-03-13 16:02:47 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-13 16:02:47 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-13 16:02:50 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13 16:02:50 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 0 JPA repository interfaces.
+2026-03-13 16:02:52 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-13 16:02:52 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-13 16:02:52 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-13 16:02:52 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 5182 ms
+2026-03-13 16:02:55 [restartedMain] INFO  c.s.f.Facturacion2Application - Starting Facturacion2Application using Java 25 with PID 11372 (C:\Users\HP\Downloads\facturacion2\facturacion2\target\classes started by HP in C:\Users\HP\Downloads\facturacion2\facturacion2)
+2026-03-13 16:02:55 [restartedMain] INFO  c.s.f.Facturacion2Application - No active profile set, falling back to 1 default profile: "default"
+2026-03-13 16:02:56 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-13 16:02:56 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-13 16:02:58 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13 16:02:58 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 0 JPA repository interfaces.
+2026-03-13 16:02:58 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-13 16:03:00 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b35b75c
+2026-03-13 16:03:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-13 16:03:00 [restartedMain] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/sistema_facturacion2?useSSL=false&serverTimezone=America/Mexico_City&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true (MySQL 8.4)
+2026-03-13 16:03:00 [restartedMain] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-03-13 16:03:00 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.056s)
+2026-03-13 16:03:00 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `sistema_facturacion2`: 1
+2026-03-13 16:03:00 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `sistema_facturacion2` is up to date. No migration necessary.
+2026-03-13 16:03:00 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-13 16:03:00 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-13 16:03:00 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-13 16:03:00 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4497 ms
+2026-03-13 16:03:00 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-13 16:03:00 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-13 16:03:02 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13 16:03:02 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-13 16:03:02 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sistema_facturacion2?useSSL=false&serverTimezone=America/Mexico_City&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.6
+	Default catalog/schema: sistema_facturacion2/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-13 16:03:04 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13 16:03:04 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13 16:03:05 [restartedMain] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/webmvc/autoconfigure/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Unsatisfied dependency expressed through method 'requestMappingHandlerMapping' parameter 0: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [org/springframework/boot/webmvc/autoconfigure/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception with message: Error creating bean with name 'jacksonJsonHttpMessageConvertersCustomizer' defined in class path resource [org/springframework/boot/http/converter/autoconfigure/JacksonHttpMessageConvertersConfiguration$JacksonJsonHttpMessageConverterConfiguration.class]: Unsatisfied dependency expressed through method 'jacksonJsonHttpMessageConvertersCustomizer' parameter 0: Error creating bean with name 'jacksonJsonMapper' defined in class path resource [org/springframework/boot/jackson/autoconfigure/JacksonAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jacksonJsonMapper' parameter 0: Error creating bean with name 'jsonMapperBuilder' defined in class path resource [org/springframework/boot/jackson/autoconfigure/JacksonAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jsonMapperBuilder' parameter 0: Error creating bean with name 'standardJsonMapperBuilderCustomizer' defined in class path resource [org/springframework/boot/jackson/autoconfigure/JacksonAutoConfiguration$JacksonJsonMapperBuilderCustomizerConfiguration.class]: Unsatisfied dependency expressed through method 'standardJsonMapperBuilderCustomizer' parameter 0: Error creating bean with name 'spring.jackson-org.springframework.boot.jackson.autoconfigure.JacksonProperties': Could not bind properties to 'JacksonProperties' : prefix=spring.jackson, ignoreInvalidFields=false, ignoreUnknownFields=true
+2026-03-13 16:03:05 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13 16:03:05 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-13 16:03:05 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-13 16:03:05 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-03-13 16:03:05 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-13 16:03:05 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.jackson.serialization' to java.util.Map<tools.jackson.databind.SerializationFeature, java.lang.Boolean>:
+
+    Reason: failed to convert java.lang.String to tools.jackson.databind.SerializationFeature (caused by java.lang.IllegalArgumentException: No enum constant tools.jackson.databind.SerializationFeature.write_dates_as_timestamps)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    CLOSE_CLOSEABLE
+    EAGER_SERIALIZER_FETCH
+    FAIL_ON_EMPTY_BEANS
+    FAIL_ON_ORDER_MAP_BY_INCOMPARABLE_KEY
+    FAIL_ON_SELF_REFERENCES
+    FAIL_ON_UNWRAPPED_TYPE_IDENTIFIERS
+    FLUSH_AFTER_WRITE_VALUE
+    INDENT_OUTPUT
+    ORDER_MAP_ENTRIES_BY_KEYS
+    USE_EQUALITY_FOR_OBJECT_ID
+    WRAP_EXCEPTIONS
+    WRAP_ROOT_VALUE
+    WRITE_CHAR_ARRAYS_AS_JSON_ARRAYS
+    WRITE_EMPTY_JSON_ARRAYS
+    WRITE_SELF_REFERENCES_AS_NULL
+    WRITE_SINGLE_ELEM_ARRAYS_UNWRAPPED
+
+2026-03-13 16:03:07 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-13 16:03:08 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@dfa28af
+2026-03-13 16:03:08 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-13 16:03:08 [restartedMain] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/sistema_facturacion2?useSSL=false&serverTimezone=America/Mexico_City&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true (MySQL 8.4)
+2026-03-13 16:03:08 [restartedMain] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-03-13 16:03:08 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.052s)
+2026-03-13 16:03:08 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `sistema_facturacion2`: 1
+2026-03-13 16:03:08 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `sistema_facturacion2` is up to date. No migration necessary.
+2026-03-13 16:03:08 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-13 16:03:08 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-13 16:03:10 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13 16:03:10 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-13 16:03:10 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sistema_facturacion2?useSSL=false&serverTimezone=America/Mexico_City&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.6
+	Default catalog/schema: sistema_facturacion2/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-13 16:03:12 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13 16:03:13 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13 16:03:13 [restartedMain] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/webmvc/autoconfigure/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Unsatisfied dependency expressed through method 'requestMappingHandlerMapping' parameter 0: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [org/springframework/boot/webmvc/autoconfigure/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception with message: Error creating bean with name 'jacksonJsonHttpMessageConvertersCustomizer' defined in class path resource [org/springframework/boot/http/converter/autoconfigure/JacksonHttpMessageConvertersConfiguration$JacksonJsonHttpMessageConverterConfiguration.class]: Unsatisfied dependency expressed through method 'jacksonJsonHttpMessageConvertersCustomizer' parameter 0: Error creating bean with name 'jacksonJsonMapper' defined in class path resource [org/springframework/boot/jackson/autoconfigure/JacksonAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jacksonJsonMapper' parameter 0: Error creating bean with name 'jsonMapperBuilder' defined in class path resource [org/springframework/boot/jackson/autoconfigure/JacksonAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jsonMapperBuilder' parameter 0: Error creating bean with name 'standardJsonMapperBuilderCustomizer' defined in class path resource [org/springframework/boot/jackson/autoconfigure/JacksonAutoConfiguration$JacksonJsonMapperBuilderCustomizerConfiguration.class]: Unsatisfied dependency expressed through method 'standardJsonMapperBuilderCustomizer' parameter 0: Error creating bean with name 'spring.jackson-org.springframework.boot.jackson.autoconfigure.JacksonProperties': Could not bind properties to 'JacksonProperties' : prefix=spring.jackson, ignoreInvalidFields=false, ignoreUnknownFields=true
+2026-03-13 16:03:13 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13 16:03:13 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-13 16:03:13 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-13 16:03:13 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-03-13 16:03:13 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-13 16:03:13 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.jackson.serialization' to java.util.Map<tools.jackson.databind.SerializationFeature, java.lang.Boolean>:
+
+    Reason: failed to convert java.lang.String to tools.jackson.databind.SerializationFeature (caused by java.lang.IllegalArgumentException: No enum constant tools.jackson.databind.SerializationFeature.write_dates_as_timestamps)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    CLOSE_CLOSEABLE
+    EAGER_SERIALIZER_FETCH
+    FAIL_ON_EMPTY_BEANS
+    FAIL_ON_ORDER_MAP_BY_INCOMPARABLE_KEY
+    FAIL_ON_SELF_REFERENCES
+    FAIL_ON_UNWRAPPED_TYPE_IDENTIFIERS
+    FLUSH_AFTER_WRITE_VALUE
+    INDENT_OUTPUT
+    ORDER_MAP_ENTRIES_BY_KEYS
+    USE_EQUALITY_FOR_OBJECT_ID
+    WRAP_EXCEPTIONS
+    WRAP_ROOT_VALUE
+    WRITE_CHAR_ARRAYS_AS_JSON_ARRAYS
+    WRITE_EMPTY_JSON_ARRAYS
+    WRITE_SELF_REFERENCES_AS_NULL
+    WRITE_SINGLE_ELEM_ARRAYS_UNWRAPPED
+
+2026-03-13 16:03:18 [restartedMain] INFO  c.s.f.Facturacion2Application - Starting Facturacion2Application using Java 25 with PID 2500 (C:\Users\HP\Downloads\facturacion2\facturacion2\target\classes started by HP in C:\Users\HP\Downloads\facturacion2\facturacion2)
+2026-03-13 16:03:18 [restartedMain] INFO  c.s.f.Facturacion2Application - No active profile set, falling back to 1 default profile: "default"
+2026-03-13 16:03:18 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-13 16:03:18 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-13 16:03:20 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13 16:03:20 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 JPA repository interfaces.
+2026-03-13 16:03:21 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-13 16:03:21 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-13 16:03:21 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-13 16:03:21 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2834 ms
+2026-03-13 16:03:22 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-13 16:03:22 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21121234
+2026-03-13 16:03:22 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-13 16:03:22 [restartedMain] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/sistema_facturacion2?useSSL=false&serverTimezone=America/Mexico_City&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true (MySQL 8.4)
+2026-03-13 16:03:22 [restartedMain] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-03-13 16:03:22 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.049s)
+2026-03-13 16:03:22 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `sistema_facturacion2`: 1
+2026-03-13 16:03:22 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `sistema_facturacion2` is up to date. No migration necessary.
+2026-03-13 16:03:23 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-13 16:03:23 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-13 16:03:24 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13 16:03:24 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-13 16:03:24 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sistema_facturacion2?useSSL=false&serverTimezone=America/Mexico_City&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.6
+	Default catalog/schema: sistema_facturacion2/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-13 16:03:26 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13 16:03:26 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13 16:03:26 [restartedMain] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/webmvc/autoconfigure/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Unsatisfied dependency expressed through method 'requestMappingHandlerMapping' parameter 0: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [org/springframework/boot/webmvc/autoconfigure/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception with message: Error creating bean with name 'jacksonJsonHttpMessageConvertersCustomizer' defined in class path resource [org/springframework/boot/http/converter/autoconfigure/JacksonHttpMessageConvertersConfiguration$JacksonJsonHttpMessageConverterConfiguration.class]: Unsatisfied dependency expressed through method 'jacksonJsonHttpMessageConvertersCustomizer' parameter 0: Error creating bean with name 'jacksonJsonMapper' defined in class path resource [org/springframework/boot/jackson/autoconfigure/JacksonAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jacksonJsonMapper' parameter 0: Error creating bean with name 'jsonMapperBuilder' defined in class path resource [org/springframework/boot/jackson/autoconfigure/JacksonAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jsonMapperBuilder' parameter 0: Error creating bean with name 'standardJsonMapperBuilderCustomizer' defined in class path resource [org/springframework/boot/jackson/autoconfigure/JacksonAutoConfiguration$JacksonJsonMapperBuilderCustomizerConfiguration.class]: Unsatisfied dependency expressed through method 'standardJsonMapperBuilderCustomizer' parameter 0: Error creating bean with name 'spring.jackson-org.springframework.boot.jackson.autoconfigure.JacksonProperties': Could not bind properties to 'JacksonProperties' : prefix=spring.jackson, ignoreInvalidFields=false, ignoreUnknownFields=true
+2026-03-13 16:03:26 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13 16:03:26 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-13 16:03:26 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-13 16:03:26 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-03-13 16:03:26 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-13 16:03:26 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.jackson.serialization' to java.util.Map<tools.jackson.databind.SerializationFeature, java.lang.Boolean>:
+
+    Reason: failed to convert java.lang.String to tools.jackson.databind.SerializationFeature (caused by java.lang.IllegalArgumentException: No enum constant tools.jackson.databind.SerializationFeature.write_dates_as_timestamps)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    CLOSE_CLOSEABLE
+    EAGER_SERIALIZER_FETCH
+    FAIL_ON_EMPTY_BEANS
+    FAIL_ON_ORDER_MAP_BY_INCOMPARABLE_KEY
+    FAIL_ON_SELF_REFERENCES
+    FAIL_ON_UNWRAPPED_TYPE_IDENTIFIERS
+    FLUSH_AFTER_WRITE_VALUE
+    INDENT_OUTPUT
+    ORDER_MAP_ENTRIES_BY_KEYS
+    USE_EQUALITY_FOR_OBJECT_ID
+    WRAP_EXCEPTIONS
+    WRAP_ROOT_VALUE
+    WRITE_CHAR_ARRAYS_AS_JSON_ARRAYS
+    WRITE_EMPTY_JSON_ARRAYS
+    WRITE_SELF_REFERENCES_AS_NULL
+    WRITE_SINGLE_ELEM_ARRAYS_UNWRAPPED
+

@@ -1,0 +1,25 @@
+name: Pipeline de Facturacion2
+
+on:
+  push:
+    branches: [ "main" ] # Se activa al subir cambios a la rama main
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar Java 21 # Ajusta a 2 si es la que usas
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Compilar y Probar con Maven
+        run: mvn clean verify
