@@ -22,4 +22,4 @@ jobs:
           cache: maven
 
       - name: Compilar y Probar con Maven
-        run: mvn clean verify DskipTests
+        run: mvn clean verify -DskipTests
