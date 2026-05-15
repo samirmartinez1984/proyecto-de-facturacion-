@@ -177,8 +177,14 @@ public class InvoiceService {
         List<InvoiceDTO> content = pageResult.getContent()
                 .stream()
                 .map(invoiceMapper::toDto).toList();
-        // ROTO INTENCIONALMENTE PARA PRUEBA DE PIPELINE
-        return null;
+        return new PageResponseDTO<>(
+                content,
+                pageResult.getNumber(),
+                pageResult.getSize(),
+                pageResult.getTotalElements(),
+                pageResult.getTotalPages(),
+                pageResult.isLast()
+        );
     }
     /**
      * Busca una factura por su identificador único, cargando sus ítems y usuario en la misma consulta.
