@@ -23,3 +23,5 @@ jobs:
 
       - name: Compilar y Ejecutar Tests Unitarios
         run: mvn clean verify -Dtest=!Facturacion2ApplicationTests
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
