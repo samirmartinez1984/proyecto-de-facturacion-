@@ -9,6 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       - name: Descargar código
@@ -23,5 +25,3 @@ jobs:
 
       - name: Compilar y Ejecutar Tests Unitarios
         run: mvn clean verify -Dtest=!Facturacion2ApplicationTests
-        env:
-          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
