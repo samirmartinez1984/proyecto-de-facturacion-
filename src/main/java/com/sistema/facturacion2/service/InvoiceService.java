@@ -199,8 +199,9 @@ public class InvoiceService {
     @Transactional(readOnly = true)
     public InvoiceDetailDTO findById(Long id){
         Invoice existingInvoice = invoiceRepository.findById(id)  // ✅ Ahora usa EntityGraph
-                .orElseThrow(() -> new RecursoNoEncontradoException(
-                        "La factura no se encuentra con el ID " + id));
+                // .orElseThrow(() -> new RecursoNoEncontradoException(
+                //         "La factura no se encuentra con el ID " + id));
+                .orElse(null);  // ROTO INTENCIONALMENTE PARA PRUEBA DE PIPELINE
         return invoiceMapper.toDetailDto(existingInvoice);
     }
     /**
