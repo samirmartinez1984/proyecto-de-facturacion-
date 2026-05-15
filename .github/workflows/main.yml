@@ -1,4 +1,4 @@
-name: Pipeline de Facturacion2
+name: Pipeline de Facturación2
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Descargar codigo
+      - name: Descargar código
         uses: actions/checkout@v4
 
       - name: Configurar Java 21 # Ajusta a 2 si es la que usas
