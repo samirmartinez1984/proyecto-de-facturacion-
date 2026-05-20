@@ -152,11 +152,18 @@ GitHub Actions compila y corre los 61 tests en cada push a main. Si algo falla, 
 
 ---
 
-## Seguridad
+La API implementa autorización basada en roles (RBAC) con dos niveles de acceso:
 
-JWT stateless, BCrypt para contraseñas, autorización por roles con Spring Security, validación de inputs en todos los endpoints,
-queries parametrizadas mediante JPA (protección contra SQL injection).
+- ADMIN — gestión completa: crear y modificar productos, ver todas las facturas del sistema
+- USER — acceso restringido a sus propios recursos: crear y consultar sus facturas
 
+Spring Security protege cada endpoint con anotaciones de autorización. Un usuario
+autenticado que intente acceder a un recurso de ADMIN recibe un 403, no un 401 —
+la distinción entre "no autenticado" y "sin permisos" está implementada correctamente.
+
+El manejo de errores es centralizado mediante un GlobalExceptionHandler (@ControllerAdvice)
+que garantiza respuestas consistentes en toda la API: mismo formato, códigos HTTP correctos
+y mensajes descriptivos sin exponer detalles internos del servidor.
 ---
 
 ## Contacto
